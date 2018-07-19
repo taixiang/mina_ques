@@ -1,0 +1,22 @@
+<view >
+  <view class='time_con'>
+      <text class='time'>{{t}}</text>
+  </view>
+  <view class='ques_con'>
+    <text>{{count}}、{{item.title}}</text>
+
+    <view class="opt_con">
+    <block wx:for="{{opts}}" wx:for-index="idx" wx:for-item="opt" wx:key="id" >
+      <view class='opt_two'>
+      <icon type="{{opt.isRight==null? '': opt.isRight ? 'success_no_circle':'cancel'}}" size='20'/>
+      <view class='opt_item' bindtap='chooseOpt' data-value='{{idx}}'>
+        {{opt.val}}
+      </view>
+      </view>
+      
+      <view class='line'/>
+    </block>
+    </view>
+    
+  </view>
+</view>

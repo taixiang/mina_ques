@@ -1,0 +1,20 @@
+<!--pages/intr/intr.wxml-->
+<!--me.wxml-->
+<view class='con'>
+  <view class="userinfo">
+    <button class='user_btn' wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover">
+      </image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class='tip'>
+  <text class='tip_1'>温馨提示：</text>
+  <text class='tip_content'>1、用户授权登录后，方可刷题。</text>
+  <text class='tip_content'>2、每次测试完成10题，每题1分，共10分，中途退出不算分。</text>
+  <text class='tip_content'>3、测试完成可至“我的”-“我的错题”里查看错误题目，同时可对试题提出质疑。</text>
+  </view>
+  <button class='test' bindtap='toTest' >开始测试</button>
+</view>

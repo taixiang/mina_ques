@@ -1,0 +1,11 @@
+<view class='index'>
+  <view class='primary' bindtap='bindViewTap' data-type='1'>
+    <image class='img1' src='../../img/pencil.png'></image>
+    <text class='txt'>小学</text>
+  </view>
+  <view class='middle' bindtap='bindViewTap' data-type='2'>
+    <image class='img2' src='../../img/pen.png'></image>
+    <text class='txt'>初中</text>
+  </view>
+
+</view>

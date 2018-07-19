@@ -1,0 +1,33 @@
+<!--pages/mission/mission.wxml-->
+<view class='mis_container'>
+  <block wx:for="{{list}}" wx:for-index="idx" wx:for-item="item" wx:key="id">
+    <view class='item_con' bindtap='bindQues' data-level='{{item}}'>
+      <view class='star_con'>
+        <view wx:if="{{item.star==-1}}">
+          <image class='img_star' src='../../img/suo.png'></image>
+        </view>
+         <view wx:elif="{{item.star==0}}">
+          <image class='img_star' src='../../img/starun.png'></image>
+          <image class='img_star' src='../../img/starun.png'></image>
+          <image class='img_star' src='../../img/starun.png'></image>
+        </view>
+        <view wx:elif="{{item.star==1}}">
+          <image class='img_star' src='../../img/stared.png'></image>
+          <image class='img_star' src='../../img/starun.png'></image>
+          <image class='img_star' src='../../img/starun.png'></image>
+        </view>
+        <view wx:elif="{{item.star==2}}">
+          <image class='img_star' src='../../img/stared.png'></image>
+          <image class='img_star' src='../../img/stared.png'></image>
+          <image class='img_star' src='../../img/starun.png'></image>
+        </view> 
+        <view wx:elif="{{item.star==3}}">
+          <image class='img_star' src='../../img/stared.png'></image>
+          <image class='img_star' src='../../img/stared.png'></image>
+          <image class='img_star' src='../../img/stared.png'></image>
+        </view>
+      </view>
+      {{item.level_id}}
+    </view>
+  </block>
+</view>

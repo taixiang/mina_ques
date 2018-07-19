@@ -1,0 +1,18 @@
+<!--pages/ques/que's.wxml-->
+<view >
+  <view class='time_con'>
+      <text class='time'>{{t}}</text>
+  </view>
+  <view class='ques_con'>
+    <text>{{item.title}}</text>
+
+    <view class="opt_con">
+    <block wx:for="{{opts}}" wx:for-index="idx" wx:for-item="opt" wx:key="id" >
+      <view class='opt_item' bindtap='chooseOpt' data-value='{{idx}}' style="background-color: {{opt.isRight==null? '': opt.isRight ? '#00ff00':'#ff0000'}}">
+        {{opt.val}}
+      </view>
+    </block>
+    </view>
+    
+  </view>
+</view>
