@@ -1,7 +1,7 @@
 // pages/intr/intr.js
 
 const app = getApp()
-
+var q = 0;
 
 Page({
 
@@ -11,7 +11,8 @@ Page({
   data: {
     userInfo: {},
     hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    canIUse: wx.canIUse('button.open-type.getUserInfo'),
+    type:1
   },
 
   getUserInfo: function (e) {
@@ -30,16 +31,23 @@ Page({
   },
 
   toTest:function(e){
-    console.log(e)
-    wx.navigateTo({
-      url: '../ques/ques',
-    })
+    if (this.data.hasUserInfo){
+      console.log(e)
+      wx.navigateTo({
+        url: '../new_ques/new_ques?type=' + this.data.type,
+      })
+    }
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    console.log("》》》》》》 q=== "+q)
+    q=1
+    this.setData({
+      type: options.type
+    })
 
     console.log(this.data.canIUse)
 
