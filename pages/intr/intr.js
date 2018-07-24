@@ -36,6 +36,12 @@ Page({
       wx.navigateTo({
         url: '../new_ques/new_ques?type=' + this.data.type,
       })
+    }else{
+      wx.showToast({
+        title: '授权登录后测试',
+        icon:"none",
+        mask:true
+      })
     }
   },
 

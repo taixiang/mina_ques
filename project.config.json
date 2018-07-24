@@ -30,13 +30,25 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 0,
+			"current": 2,
 			"list": [
 				{
 					"id": -1,
 					"name": "题目",
 					"pathName": "pages/new_ques/new_ques",
 					"query": "type=1&level=1"
+				},
+				{
+					"id": 1,
+					"name": "结果",
+					"pathName": "pages/result/result",
+					"query": "type=1&right=6"
+				},
+				{
+					"id": -1,
+					"name": "我的",
+					"pathName": "pages/me/me",
+					"query": ""
 				}
 			]
 		}

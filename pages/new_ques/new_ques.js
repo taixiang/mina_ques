@@ -240,18 +240,15 @@ function next(ths) {
       data.answers = ans.substr(0,ans.length-1)
       data.wrongs = wrongsid.substr(0,wrongsid.length-1)
 
-
-
       console.log("data.wrongs ====  "+data.wrongs)
       console.log("data.answers ====  " + data.answers)
       console.log("data.point ====  " + data.point)
 
-
       postResult(ths, data)
 
-      // wx.navigateTo({
-      //   url: "../result/result"
-      // })
+      wx.redirectTo({
+        url: "../result/result?type="+ths.data.type+"&right="+right
+      })
       return
     }
 

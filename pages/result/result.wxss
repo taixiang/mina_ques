@@ -1,1 +1,43 @@
 /* pages/result/result.wxss */
+.parent{
+  height: 100%
+}
+.con{
+  background: #97cff7;
+
+  
+
+}
+.point{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  color: #fff
+}
+.point_txt{
+  font-size: 60px;
+}
+.point_sub{
+  margin-bottom: 15px;
+  margin-left: 5px;
+}
+.tip{
+  justify-content: center;
+  display: flex;
+  color: #fff;
+  font-size: 15px;
+  padding-bottom: 10px
+}
+.btn{
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  justify-content: space-around;
+  
+}
+.wrong{
+padding:5px 15px;
+font-size: 16px;
+color: #fff;
+margin-bottom: 20px
+}

@@ -9,6 +9,11 @@
     </block>
   </view>
   <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+    <image class='img' src='../../img/home_selected.png'></image>
+    <text class="user-motto" class='txt'>我的纠错</text> 
+  </view>
+  <view class="usermotto">
+    <image class='img' src='../../img/home_selected.png'></image>
+    <text class="user-motto" class='txt'>我的纠错</text> 
   </view>
 </view>
