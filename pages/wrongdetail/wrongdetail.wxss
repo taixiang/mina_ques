@@ -1,0 +1,28 @@
+/* pages/wrongdetail/wrongdetail.wxss */
+
+.ques_con{
+  padding: 20rpx;
+  font-family: "微软雅黑"
+}
+.opt_con{
+  margin-top: 20px;
+}
+.opt_two{
+  display: flex;
+  flex-direction: row;
+  align-items: center
+}
+.opt_item{
+  flex: 1;
+    /* background-color: #00ff00;   */
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 5px;
+  padding: 0px 5px;
+  border-radius: 5px;
+  /* border: 1px solid #F0F0F0; */
+}
+.line{
+  height: 1px;
+  background: #F0F0F0
+}

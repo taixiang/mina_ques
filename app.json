@@ -7,7 +7,10 @@
     "pages/ques/ques",
     "pages/result/result",
     "pages/intr/intr",
-    "pages/new_ques/new_ques"
+    "pages/new_ques/new_ques",
+    "pages/rank/rank",
+    "pages/wrong/wrong",
+    "pages/wrongdetail/wrongdetail"
   ],
   "window": {
     "backgroundTextStyle": "light",

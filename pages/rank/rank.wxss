@@ -1,0 +1,46 @@
+/* pages/rank/rank.wxss */
+.top{
+  display: flex;
+}
+.txt{
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  color: #555;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+  margin-left: 40rpx;
+  margin-right: 40rpx;
+  border-bottom: 1px solid #e6e6e6
+}
+.line{
+  width: 1px;
+  height: 40rpx;
+  background: #e6e6e6;
+  align-self: center
+}
+.rank_v{
+  padding: 0px 40rpx
+}
+.list_v{
+  margin-top: 20rpx;
+  padding-bottom: 12rpx;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #e6e6e6
+}
+.userinfo-avatar {
+  width: 90rpx;
+  height: 90rpx;
+  border-radius: 50%;
+}
+.name{
+  color: #212121;
+  margin-left: 20rpx;
+}
+.point{
+  justify-content: flex-end;
+  display: flex;
+  flex: 1;
+  margin-right: 40rpx
+}

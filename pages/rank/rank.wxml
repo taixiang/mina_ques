@@ -1,0 +1,18 @@
+<!--pages/rank/rank.wxml-->
+<view>
+  <view class='top'>
+    <text bindtap='primary' style='color:{{isSelected?"#108ee9":"#555"}}' class='txt'>小学</text>
+    <view class='line'></view>
+    <text bindtap='middle' style='color:{{isSelected?"#555":"#108ee9"}}' class='txt'>初中</text>
+  </view>
+
+  <view class='rank_v'>
+    <view wx:for="{{items}}" wx:for-item="item" wx:key="id">
+      <view class='list_v'>
+        <image class="userinfo-avatar" src="{{item.user_id.avatarUrl}}" background-size="cover"></image>
+        <text class='name'>{{item.user_id.nickName}}</text>
+        <text class='point'>{{item.point}}</text>
+      </view>
+    </view>
+  </view>
+</view>

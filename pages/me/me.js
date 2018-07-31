@@ -9,12 +9,25 @@ Page({
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')
   },
-  //事件处理函数
-  bindViewTap: function () {
+
+  /**
+   * 排行榜
+   */
+  toRank:function(e){
     wx.navigateTo({
-      url: '../logs/logs'
+      url: '../rank/rank',
     })
   },
+
+  /**
+   * 我的错题
+   */
+  toWrong:function(e){
+    wx.navigateTo({
+      url: '../wrong/wrong',
+    })
+  },
+
   onLoad: function () {
     if (app.globalData.userInfo.nickName) {
       this.setData({

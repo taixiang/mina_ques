@@ -3,17 +3,29 @@
   <view class="userinfo">
     <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
     <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover">
+      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover">
       </image>
       <text class="userinfo-nickname">{{userInfo.nickName}}</text>
     </block>
   </view>
-  <view class="usermotto">
-    <image class='img' src='../../img/home_selected.png'></image>
+  <view class="usermotto" bindtap='toRank'>
+    <image class='img' src='../../img/ic_rank.png'></image>
+    <text class="user-motto" class='txt'>排行榜</text> 
+  </view>
+  <view class="usermotto" bindtap='toWrong'>
+    <image class='img' src='../../img/ic_wrong.png'></image>
+    <text class="user-motto" class='txt'>我的错题</text> 
+  </view>
+  <view class="modify">
+    <image class='img' src='../../img/ic_modify.png'></image>
     <text class="user-motto" class='txt'>我的纠错</text> 
   </view>
   <view class="usermotto">
-    <image class='img' src='../../img/home_selected.png'></image>
-    <text class="user-motto" class='txt'>我的纠错</text> 
+    <image class='img' src='../../img/ic_advice.png'></image>
+    <text class="user-motto" class='txt'>意见反馈</text> 
+  </view>
+  <view class="modify">
+    <image class='img' src='../../img/ic_about.png'></image>
+    <text class="user-motto" class='txt'>关于我们</text> 
   </view>
 </view>

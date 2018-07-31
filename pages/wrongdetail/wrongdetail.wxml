@@ -1,0 +1,18 @@
+<!--pages/wrongdetail/wrongdetail.wxml-->
+<view>
+  <view class='ques_con'>
+    <text>{{detail.pId.title}}</text>
+    <view class="opt_con">
+      <block wx:for="{{opts}}" wx:for-index="idx" wx:for-item="opt" wx:key="id">
+        <view class='opt_two'>
+          <icon type="{{opt.isRight==null? '': opt.isRight ? 'success_no_circle':'cancel'}}" size='20' />
+          <view class='opt_item'>
+            {{opt.val}}
+          </view>
+        </view>
+        <view class='line' />
+      </block>
+    </view>
+
+  </view>
+</view>
