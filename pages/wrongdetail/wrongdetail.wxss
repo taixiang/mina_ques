@@ -2,10 +2,14 @@
 
 .ques_con{
   padding: 20rpx;
-  font-family: "微软雅黑"
+  font-family: "微软雅黑";
+  font-size: 32rpx;
+  display: flex;
+  flex-direction: column;
+  color: #212121
 }
 .opt_con{
-  margin-top: 20px;
+  margin-top: 0px;
 }
 .opt_two{
   display: flex;
@@ -15,8 +19,8 @@
 .opt_item{
   flex: 1;
     /* background-color: #00ff00;   */
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin-top: 5px;
+  margin-bottom: 5px;
   margin-left: 5px;
   padding: 0px 5px;
   border-radius: 5px;
@@ -25,4 +29,26 @@
 .line{
   height: 1px;
   background: #F0F0F0
+}
+.right{
+  margin-top: 20px;
+}
+.answer{
+  margin-top: 10px
+}
+.analyze{
+  margin-top: 10px;
+  color: #666
+}
+
+.error{
+  position: fixed;
+  right: 0;
+  bottom: 50rpx;
+  background-color: #585756;
+  opacity: 0.4;
+  border-radius: 20rpx 0 0 20rpx;
+  padding: 20rpx;
+  color: #fff;
+  font-size: 30rpx
 }

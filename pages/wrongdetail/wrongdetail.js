@@ -1,7 +1,7 @@
 // pages/wrongdetail/wrongdetail.js
 var constant = require("../../utils/constant.js")
 const app = getApp()
-
+var type = 0;
 Page({
 
   /**
@@ -10,13 +10,71 @@ Page({
   data: {
     detail:null,
     opts: [], //选项
+    hiddenmodalput: true,
+    value: "", //输入内容
+    initVal: "",//初始化内容
   },
+
+
+
+  /**
+   * 监听输入的字
+   */
+  bindKeyInput: function (e) {
+    console.log(e.detail.value)
+    this.setData({
+      value: e.detail.value
+    })
+  },
+
+  /**
+   * 弹出框
+   */
+  showError: function (e) {
+    this.setData({
+      hiddenmodalput: false
+    })
+  },
+
+  //取消按钮  
+  cancel: function () {
+    this.setData({
+      hiddenmodalput: true
+    });
+  },
+
+  //确认  
+  confirm: function () {
+    console.log("66666666666")
+    if (!this.data.value) {
+      console.log(this.data.value)
+      wx.showToast({
+        title: '请输入内容',
+        icon: 'none'
+      })
+      return
+
+    }
+
+    var data = {};
+    data.user_id_id = app.globalData.openId
+    data.qId = this.data.detail.pId.id
+    data.content = this.data.value
+    data.type_id = type
+    console.log(data)
+    postError(this, data)
+
+    this.setData({
+      hiddenmodalput: true
+    })
+  },  
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
     console.log(options)
+    type = options.type
     getData(this,options.id)
   },
 
@@ -90,6 +148,34 @@ function getData(that,id){
       that.setData({
         detail:e.data,
         opts:that.data.opts
+      })
+    }
+  })
+}
+
+/**
+ * 纠错提交
+ */
+function postError(that,data){
+  wx.request({
+    url: constant.postError,
+    method:"POST",
+    data:data,
+    success:res=>{
+      console.log(res)
+      var json = JSON.parse(res.data)
+      if (json.code == 200) {
+        wx.showToast({
+          title: json.result,
+        })
+        that.setData({
+          initVal: ""
+        })
+      }
+    },
+    fail:e=>{
+      that.setData({
+        initVal: ""
       })
     }
   })

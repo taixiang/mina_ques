@@ -16,7 +16,7 @@
     <image class='img' src='../../img/ic_wrong.png'></image>
     <text class="user-motto" class='txt'>我的错题</text> 
   </view>
-  <view class="modify">
+  <view class="modify" bindtap='toError'>
     <image class='img' src='../../img/ic_modify.png'></image>
     <text class="user-motto" class='txt'>我的纠错</text> 
   </view>

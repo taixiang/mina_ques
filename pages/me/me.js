@@ -28,6 +28,15 @@ Page({
     })
   },
 
+  /**
+   * 我的纠错
+   */
+  toError:function(e){
+    wx.navigateTo({
+      url: '../error/error',
+    })
+  },
+
   onLoad: function () {
     if (app.globalData.userInfo.nickName) {
       this.setData({

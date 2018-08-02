@@ -1,7 +1,7 @@
 // pages/wrong/wrong.js
 var constant = require("../../utils/constant.js")
 const app = getApp()
-
+var type = 1 // 1--小学 2--初中
 Page({
 
   /**
@@ -19,6 +19,7 @@ Page({
     this.setData({
       isSelected: true
     })
+    type = 1
     getData(this, app.globalData.openId,1)
 
   },
@@ -30,6 +31,7 @@ Page({
     this.setData({
       isSelected: false
     })
+    type = 2
     getData(this, app.globalData.openId,2)
   },
 
@@ -39,7 +41,7 @@ Page({
   toDetail:function(e){
     console.log(e)
     wx.navigateTo({
-      url: '../wrongdetail/wrongdetail?id='+e.currentTarget.dataset.id,
+      url: '../wrongdetail/wrongdetail?id='+e.currentTarget.dataset.id+"&type="+type,
     })
   },
 

@@ -1,4 +1,4 @@
-var baseUrl = "http://192.168.1.100:8000/";
+var baseUrl = "http://192.168.1.104:8000/";
 module.exports={
   getOpenId: baseUrl.concat('edu/getOpenId?code='), //openid
   postUserInfo: baseUrl.concat('edu/postUserInfo'),//用户信息
@@ -7,5 +7,6 @@ module.exports={
   postPoint: baseUrl.concat('edu/postPoint/'), //结果提交
   rank:baseUrl.concat('api/rank'),  //排行榜
   wrongQues: baseUrl.concat('api/wrongQues'),  //错题集
+  postError: baseUrl.concat('edu/postError'), //纠错
 
 }

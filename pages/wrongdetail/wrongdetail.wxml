@@ -14,5 +14,15 @@
       </block>
     </view>
 
+    <text class='right'>正确答案：{{detail.pId.correct}}</text>
+    <text class='answer'>我的答案：{{detail.answer}}</text>
+    <text class='analyze'>{{detail.pId.analyze}}</text>
+
   </view>
 </view>
+
+<modal hidden="{{hiddenmodalput}}"  confirm-text="提交" cancel-text="取消" bindcancel="cancel" bindconfirm="confirm">  
+    <textarea type='text' bindinput='bindKeyInput' placeholder="请描述错误内容" value='{{initVal}}'/>  
+</modal>  
+
+<view class='error' bindtap='showError'>我要纠错</view>

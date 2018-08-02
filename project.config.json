@@ -30,7 +30,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 5,
+			"current": 6,
 			"list": [
 				{
 					"id": -1,
@@ -63,10 +63,16 @@
 					"query": ""
 				},
 				{
-					"id": -1,
+					"id": 5,
 					"name": "我的错题",
 					"pathName": "pages/wrongdetail/wrongdetail",
-					"query": "id=2"
+					"query": "id=2&type=1"
+				},
+				{
+					"id": 6,
+					"name": "我的纠错",
+					"pathName": "pages/error/error",
+					"query": ""
 				}
 			]
 		}

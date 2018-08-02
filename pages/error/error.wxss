@@ -1,0 +1,21 @@
+/* pages/error/error.wxss */
+.top{
+  display: flex;
+}
+.txt{
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  color: #555;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+  margin-left: 40rpx;
+  margin-right: 40rpx;
+  border-bottom: 1px solid #e6e6e6
+}
+.line{
+  width: 1px;
+  height: 40rpx;
+  background: #e6e6e6;
+  align-self: center
+}

@@ -10,7 +10,8 @@
     "pages/new_ques/new_ques",
     "pages/rank/rank",
     "pages/wrong/wrong",
-    "pages/wrongdetail/wrongdetail"
+    "pages/wrongdetail/wrongdetail",
+    "pages/error/error"
   ],
   "window": {
     "backgroundTextStyle": "light",
