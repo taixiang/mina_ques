@@ -6,7 +6,7 @@
     <text bindtap='middle' style='color:{{isSelected?"#555":"#108ee9"}}' class='txt'>初中</text>
   </view>
 
-    <view class='rank_v'>
+  <view class='rank_v'>
     <view wx:for="{{items}}" wx:for-item="item" wx:key="id" wx:for-index="index">
       <view class='list_v' bindtap='toDetail' data-id='{{item.id}}'>
         <text class='title'>{{index+1}}、{{item.pId.title}}</text>

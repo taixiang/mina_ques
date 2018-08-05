@@ -37,6 +37,15 @@ Page({
     })
   },
 
+  /**
+   * 意见反馈
+   */
+  toAdvice:function(e){
+    wx.navigateTo({
+      url: '../advice/advice',
+    })
+  },
+
   onLoad: function () {
     if (app.globalData.userInfo.nickName) {
       this.setData({

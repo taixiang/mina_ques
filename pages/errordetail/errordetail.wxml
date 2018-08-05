@@ -1,0 +1,23 @@
+<!--pages/wrongdetail/wrongdetail.wxml-->
+<view>
+  <view class='ques_con'>
+    <text>{{detail.pId.title}}</text>
+    <view class="opt_con">
+      <block wx:for="{{opts}}" wx:for-index="idx" wx:for-item="opt" wx:key="id">
+        <view class='opt_two'>
+          <icon type="{{opt.isRight==null? '': opt.isRight ? 'success_no_circle':'cancel'}}" size='20' />
+          <view class='opt_item'>
+            {{opt.val}}
+          </view>
+        </view>
+        <view class='line' />
+      </block>
+    </view>
+
+    <text class='right'>正确答案：{{detail.pId.correct}}</text>
+    <text class='answer'>我的答案：{{detail.answer}}</text>
+    <text class='analyze'>{{detail.pId.analyze}}</text>
+    <view class='line2' />
+    <text class='error'>我的纠错：{{detail.content}}</text>
+  </view>
+</view>

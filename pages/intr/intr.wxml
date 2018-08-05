@@ -12,10 +12,10 @@
   </view>
   <view class='tip'>
   <text class='tip_1'>温馨提示：</text>
-  <text class='tip_content'>1、用户授权登录后，方可测试。</text>
-  <text class='tip_content'>2、每次测试完成10题，每题1分，共10分，中途退出不算分。</text>
+  <text class='tip_content'>1、用户授权登录后，方可答题。</text>
+  <text class='tip_content'>2、每次答题共10题，每题1分，共10分，中途退出不算分。</text>
   <text class='tip_content'>3、测试完成可至“我的”-“我的错题”里查看错题，同时可对错题提出质疑。</text>
   <text class='tip_content'>4、累计答对题数可至“我的”-“排行榜”查看。</text>
   </view>
-  <button class='test' bindtap='toTest' >开始测试</button>
+  <button class='test' bindtap='toTest' >开始答题</button>
 </view>

@@ -1,7 +1,6 @@
-// pages/error/error.js
+// pages/errordetail/errordetail.js
 var constant = require("../../utils/constant.js")
 const app = getApp()
-var type = 1 // 1--小学 2--初中
 
 Page({
 
@@ -9,49 +8,15 @@ Page({
    * 页面的初始数据
    */
   data: {
-    isSelected: true, //小学 是否选中
-    items: null
+    detail: null,
+    opts: [], //选项
   },
-
-  primary: function (e) {
-    if (this.data.isSelected) {
-      return
-    }
-    this.setData({
-      isSelected: true
-    })
-    type = 1
-    getData(this, app.globalData.openId, 1)
-
-  },
-
-  middle: function (e) {
-    if (!this.data.isSelected) {
-      return
-    }
-    this.setData({
-      isSelected: false
-    })
-    type = 2
-    getData(this, app.globalData.openId, 2)
-  },
-
-  /**
-   * 详情
-   */
-  toDetail: function (e) {
-    console.log(e)
-    wx.navigateTo({
-      url: '../errordetail/errordetail?id=' + e.currentTarget.dataset.id,
-    })
-  },
-
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    getData(this, app.globalData.openId, 1)
+    getData(this, options.id)
   },
 
   /**
@@ -104,13 +69,27 @@ Page({
   }
 })
 
-function getData(that, userId, type) {
+
+function getData(that, id) {
   wx.request({
-    url: constant.error + "?user_id=" + userId + "&type_id=" + type,
-    success: function (e) {
+    url: constant.error + "/" + id,
+    success: e => {
       console.log(e)
+      that.data.opts.push({
+        "val": e.data.pId.optA
+      })
+      that.data.opts.push({
+        "val": e.data.pId.optB
+      })
+      that.data.opts.push({
+        "val": e.data.pId.optC
+      })
+      that.data.opts.push({
+        "val": e.data.pId.optD
+      })
       that.setData({
-        items: e.data.results
+        detail: e.data,
+        opts: that.data.opts
       })
     }
   })

@@ -11,7 +11,9 @@
     "pages/rank/rank",
     "pages/wrong/wrong",
     "pages/wrongdetail/wrongdetail",
-    "pages/error/error"
+    "pages/error/error",
+    "pages/errordetail/errordetail",
+    "pages/advice/advice"
   ],
   "window": {
     "backgroundTextStyle": "light",

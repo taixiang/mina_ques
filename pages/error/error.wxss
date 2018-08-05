@@ -19,3 +19,33 @@
   background: #e6e6e6;
   align-self: center
 }
+
+.rank_v{
+  padding: 0px 40rpx
+}
+.list_v{
+  margin-top: 20rpx;
+  padding-bottom: 12rpx;
+  display: flex;
+  border-bottom: 1px solid #e6e6e6;
+  flex-direction: column;
+}
+
+.title,.ques{
+  font-size: 34rpx;
+  color: #212121;
+  display: -webkit-box !important;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  line-height: 40rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-top: 20rpx
+}
+.ques{
+  font-size: 28rpx;
+  color: #999;
+  margin-left: 30rpx;
+  margin-top: 5rpx;
+}

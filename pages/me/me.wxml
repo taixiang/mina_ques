@@ -20,7 +20,7 @@
     <image class='img' src='../../img/ic_modify.png'></image>
     <text class="user-motto" class='txt'>我的纠错</text> 
   </view>
-  <view class="usermotto">
+  <view class="usermotto" bindtap='toAdvice'>
     <image class='img' src='../../img/ic_advice.png'></image>
     <text class="user-motto" class='txt'>意见反馈</text> 
   </view>

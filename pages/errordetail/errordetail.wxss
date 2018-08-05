@@ -1,0 +1,51 @@
+/* pages/wrongdetail/wrongdetail.wxss */
+
+.ques_con{
+  padding: 20rpx;
+  font-family: "微软雅黑";
+  font-size: 32rpx;
+  display: flex;
+  flex-direction: column;
+  color: #212121
+}
+.opt_con{
+  margin-top: 0px;
+}
+.opt_two{
+  display: flex;
+  flex-direction: row;
+  align-items: center
+}
+.opt_item{
+  flex: 1;
+    /* background-color: #00ff00;   */
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  padding: 0px 5px;
+  border-radius: 5px;
+  /* border: 1px solid #F0F0F0; */
+}
+.line,.line2{
+  height: 1px;
+  background: #F0F0F0
+}
+.right{
+  margin-top: 20px;
+  color: #108ee9
+}
+.answer{
+  margin-top: 10px;
+  color: #f4333c
+}
+.analyze{
+  margin-top: 10px;
+  color: #666;
+  font-size: 28rpx;
+}
+.line2{
+  margin-top: 20rpx;
+}
+.error{
+  margin-top: 10px
+}
