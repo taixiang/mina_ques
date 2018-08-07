@@ -12,13 +12,13 @@ Page({
 
   toWrong:function(e){
     wx.redirectTo({
-      url: '',
+      url: '../wrong/wrong',
     })
   },
 
   toTest:function(e){
     wx.redirectTo({
-      url: '',
+      url: '../new_ques/new_ques?type=' + this.data.type,
     })
   },
 

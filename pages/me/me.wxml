@@ -24,7 +24,7 @@
     <image class='img' src='../../img/ic_advice.png'></image>
     <text class="user-motto" class='txt'>意见反馈</text> 
   </view>
-  <view class="modify">
+  <view class="modify" hidden='true'>
     <image class='img' src='../../img/ic_about.png'></image>
     <text class="user-motto" class='txt'>关于我们</text> 
   </view>
