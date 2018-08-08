@@ -16,7 +16,8 @@
 }
 .ques_con{
   padding: 20rpx;
-  font-family: "微软雅黑"
+  font-family: "微软雅黑";
+  font-size: 32rpx
 }
 .opt_con{
   margin-top: 20px;
