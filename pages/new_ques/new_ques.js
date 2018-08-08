@@ -17,7 +17,7 @@ Page({
     item: {},
     type: 1, //班级
     opts: [], //选项
-    t: 30, //倒计时
+    t: 45, //倒计时
     count: 0 //题目数
   },
 
@@ -212,7 +212,7 @@ function setTime(that) {
 
     if (that.data.t < 0) {
       that.setData({
-        t: 15
+        t: 45
       })
     }
     // console.log(that.data.t)
@@ -232,6 +232,7 @@ function next(ths) {
 
     if (num >= list.length) {
       clearInterval(timer)
+      timer = null
       var data = {};
       data.type_id = ths.data.type
       data.user_id_id = app.globalData.openId
@@ -256,7 +257,7 @@ function next(ths) {
     renderData(that)
 
     that.setData({
-      t: 15
+      t: 45
     })
     setTime(that)
 
