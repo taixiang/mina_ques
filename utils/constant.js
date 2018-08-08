@@ -1,4 +1,4 @@
-var baseUrl = "http://192.168.1.100:8000/";
+var baseUrl = "https://blog.manjiexiang.cn/";//https://blog.manjiexiang.cn/ http://192.168.1.100:8000/
 module.exports={
   getOpenId: baseUrl.concat('edu/getOpenId?code='), //openid
   postUserInfo: baseUrl.concat('edu/postUserInfo'),//用户信息

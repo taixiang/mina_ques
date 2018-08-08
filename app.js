@@ -132,7 +132,11 @@ function postInfo(data) {
     method: 'POST',
     data: data,
     success: function (res) {
+      console.log("成功")
 
+    },
+    fail:res=>{
+      console.log("失败")
     }
   })
 }
