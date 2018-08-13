@@ -17,5 +17,5 @@
   <text class='tip_content'>3、测试完成可至“我的”-“我的错题”里查看错题，同时可对错题提出质疑。</text>
   <text class='tip_content'>4、累计答对题数可至“我的”-“排行榜”查看。</text>
   </view>
-  <button class='test' bindtap='toTest' bindgetuserinfo="getUserInfo" open-type="getUserInfo" >开始答题</button>
+  <button class='test'  bindgetuserinfo="getUserInfo" open-type="getUserInfo" >开始答题</button>
 </view>

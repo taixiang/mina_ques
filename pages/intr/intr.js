@@ -19,15 +19,27 @@ Page({
     console.log("获取信息")
     console.log(e)
     app.globalData.userInfo = e.detail.userInfo
-    app.globalData.userInfo.openId = app.globalData.openId
+    if (app.globalData.userInfo != null){
+      console.log("=============")
+      app.globalData.userInfo.openId = app.globalData.openId
 
-    console.log(app.globalData.userInfo)
-    app.postUser(app.globalData.userInfo)
+      console.log(app.globalData.userInfo)
+      app.postUser(app.globalData.userInfo)
 
-    this.setData({
-      userInfo: e.detail.userInfo,
-      hasUserInfo: true
-    })
+      this.setData({
+        userInfo: e.detail.userInfo,
+        hasUserInfo: true
+      },()=>{
+        console.log("---------")
+        if (this.data.hasUserInfo) {
+          console.log(this.data.type)
+          wx.navigateTo({
+            url: '../new_ques/new_ques?type=' + this.data.type,
+          })
+        }
+      })
+    }
+    
   },
 
   toTest:function(e){
@@ -45,6 +57,7 @@ Page({
   onLoad: function (options) {
     console.log("》》》》》》 q=== "+q)
     q=1
+    console.log(app.globalData.openId)
     this.setData({
       type: options.type
     })

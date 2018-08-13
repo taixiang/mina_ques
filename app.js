@@ -65,7 +65,7 @@ function getOpenId(that, jscode) {
   wx.request({
     url: constant.getOpenId + jscode,
     success: function (res) {
-      console.log("openid")
+      console.log("openid=========")
       console.log(res)
       var result = JSON.parse(res.data)
       console.log(result.openid)
