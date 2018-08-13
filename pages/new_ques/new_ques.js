@@ -161,8 +161,14 @@ Page({
 })
 
 function getData(that, type) {
+  var url = "";
+  if(type==1){
+    url = constant.getQues + "?type_id=" + type
+  }else{
+    url = constant.getQuesM + "?type_id=" + type
+  }
   wx.request({
-    url: constant.getQues + "?type_id=" + type,
+    url: url,
     method: 'GET',
     success: function(res) {
       console.log(res)

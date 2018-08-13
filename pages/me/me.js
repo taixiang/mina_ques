@@ -24,7 +24,7 @@ Page({
    */
   toWrong:function(e){
     wx.navigateTo({
-      url: '../wrong/wrong',
+      url: '../wrong/wrong?type=1',
     })
   },
 
