@@ -12,7 +12,7 @@ Page({
 
   toWrong:function(e){
     wx.redirectTo({
-      url: '../wrong/wrong',
+      url: '../wrong/wrong?type=' + this.data.type,
     })
   },
 

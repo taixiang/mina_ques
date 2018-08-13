@@ -58,7 +58,11 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    getData(this, app.globalData.openId, 1, this.data.page)
+    this.setData({
+      type: options.type,
+      isSelected: options.type == 1?true:false
+    })
+    getData(this, app.globalData.openId, options.type, this.data.page)
   },
 
   /**

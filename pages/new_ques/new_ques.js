@@ -92,6 +92,15 @@ Page({
     this.setData({
       type: options.type
     })
+    if (options.type == 1) {
+      wx.setNavigationBarTitle({
+        title: '小学语文',
+      })
+    } else {
+      wx.setNavigationBarTitle({
+        title: '初中语文',
+      })
+    }
     getData(this, options.type)
   },
 

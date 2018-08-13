@@ -42,15 +42,9 @@
   margin-top: 10rpx
 }
 .test{
-
-   /* margin-left: 50px;  */
-  /* margin-right: 50px; */
-  /* align-content: flex-end; */
-  /* justify-content: flex-end; */
-  /* align-items: flex-end; */
-  /* align-self: flex-end */
-  bottom: 0;
-  width: 100%;
-  position: fixed
-
+  margin: 0 60rpx;
+  display: flex;
+  justify-content: center;
+  background-color: #97cff7;
+  color: #fff
 }

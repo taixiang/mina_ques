@@ -5,7 +5,7 @@
   font-size: 50rpx
 }
 
-.primary,.middle {
+.primary,.middle,.continue {
   background-color: #19CAAD;
   width: 80%;
   height: 233rpx;
@@ -19,6 +19,9 @@
 }
 .middle{
   background-color: #817fdd;
+}
+.continue{
+  background-color: #97cff7
 }
 .txt {
   flex: 1;

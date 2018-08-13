@@ -36,12 +36,6 @@ Page({
       wx.navigateTo({
         url: '../new_ques/new_ques?type=' + this.data.type,
       })
-    }else{
-      wx.showToast({
-        title: '授权登录后测试',
-        icon:"none",
-        mask:true
-      })
     }
   },
 
@@ -54,6 +48,15 @@ Page({
     this.setData({
       type: options.type
     })
+    if(options.type == 1){
+        wx.setNavigationBarTitle({
+          title: '小学语文',
+        })
+    }else{
+      wx.setNavigationBarTitle({
+        title: '初中语文',
+      })
+    }
 
     console.log(this.data.canIUse)
 
