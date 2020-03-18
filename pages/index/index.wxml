@@ -7,6 +7,10 @@
     <image class='img2' src='../../img/pen.png'></image>
     <text class='txt'>初中语文</text>
   </view>
+  <view class='third' bindtap='bindSentence'>
+    <image class='img2' src='../../img/book.png'></image>
+    <text class='txt'>名句分享</text>
+  </view>
   <view class='continue'>
     <image class='img2' src='../../img/continue.png'></image>
     <text class='txt'>敬请期待</text>

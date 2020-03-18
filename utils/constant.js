@@ -1,4 +1,4 @@
-var baseUrl = "https://blog.manjiexiang.cn/";//https://blog.manjiexiang.cn/ http://192.168.1.100:8000/
+var baseUrl = "https://www.manjiexiang.cn/";//https://blog.manjiexiang.cn/ http://192.168.0.110:8000/
 module.exports={
   getOpenId: baseUrl.concat('edu/getOpenId?code='), //openid
   postUserInfo: baseUrl.concat('edu/postUserInfo'),//用户信息
@@ -11,5 +11,7 @@ module.exports={
   postError: baseUrl.concat('edu/postError'), //纠错
   error:baseUrl.concat('api/error'), //错题集
   postAdvice: baseUrl.concat('edu/postAdvice'), //纠错
+  sentence: baseUrl.concat('api/sentence'), //句子
+  postCopy: baseUrl.concat('edu/postCopy'), //复制提交
 
 }

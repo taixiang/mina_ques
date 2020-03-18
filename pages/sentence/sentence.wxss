@@ -1,0 +1,15 @@
+/* pages/sentence/sentence.wxss */
+.txt-v{
+  padding: 24rpx 24rpx 0 24rpx
+}
+
+.txt{
+  font-size: 32rpx;
+  color: #111111;
+}
+
+.copy-txt{
+  border-radius: 12rpx;
+  border: 2rpx #e4e4e4 solid;
+  padding: 5rpx 24rpx
+}

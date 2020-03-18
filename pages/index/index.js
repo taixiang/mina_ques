@@ -15,6 +15,12 @@ Page({
       url: '../intr/intr?type='+e.currentTarget.dataset.type,
     })
   },
+
+  bindSentence: function(){
+    wx.navigateTo({
+      url: '../sentence/sentence',
+    })
+  },
   onLoad: function () {
     
   },

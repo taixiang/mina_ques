@@ -13,7 +13,8 @@
     "pages/wrongdetail/wrongdetail",
     "pages/error/error",
     "pages/errordetail/errordetail",
-    "pages/advice/advice"
+    "pages/advice/advice",
+    "pages/sentence/sentence"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -39,5 +40,6 @@
         "selectedIconPath": "./img/me_selected.png"
       }
     ]
-  }
+  },
+  "sitemapLocation": "sitemap.json"
 }
